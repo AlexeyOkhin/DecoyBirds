@@ -19,6 +19,12 @@ class DecoyCollectionViewController: UICollectionViewController {
         
     }
     
+    // MARK: - UnwindSegue
+    
+    @IBAction func unwindSegue (segue: UIStoryboardSegue) {
+        
+    }
+    
     
     // MARK: UICollectionViewDataSource
     

@@ -67,6 +67,7 @@
 				8A3DCC9A24E8360C005D0CC2 /* Cell */,
 				8A3DCC8224E6DEEB005D0CC2 /* Assets.xcassets */,
 				8A3DCC9524E8356A005D0CC2 /* Other file */,
+				8A3DCC8724E6DEEB005D0CC2 /* Info.plist */,
 			);
 			path = DecoyBirds;
 			sourceTree = "<group>";
@@ -76,7 +77,6 @@
 			children = (
 				8A3DCC7B24E6DEEA005D0CC2 /* AppDelegate.swift */,
 				8A3DCC8424E6DEEB005D0CC2 /* LaunchScreen.storyboard */,
-				8A3DCC8724E6DEEB005D0CC2 /* Info.plist */,
 			);
 			path = "Other file";
 			sourceTree = "<group>";
