@@ -16,6 +16,8 @@
 		8A3DCC9224E833A1005D0CC2 /* TypeBirdsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DCC9124E833A1005D0CC2 /* TypeBirdsTableViewController.swift */; };
 		8A3DCC9424E8347E005D0CC2 /* BirdsSongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DCC9324E8347E005D0CC2 /* BirdsSongTableViewController.swift */; };
 		8A3DCC9924E835DC005D0CC2 /* TypeBirdsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DCC9824E835DC005D0CC2 /* TypeBirdsTableViewCell.swift */; };
+		8A7B017F24E9905A0043906D /* TypeBird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7B017E24E9905A0043906D /* TypeBird.swift */; };
+		8A7B018124E993120043906D /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7B018024E993120043906D /* Bird.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		8A3DCC9124E833A1005D0CC2 /* TypeBirdsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeBirdsTableViewController.swift; sourceTree = "<group>"; };
 		8A3DCC9324E8347E005D0CC2 /* BirdsSongTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdsSongTableViewController.swift; sourceTree = "<group>"; };
 		8A3DCC9824E835DC005D0CC2 /* TypeBirdsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeBirdsTableViewCell.swift; sourceTree = "<group>"; };
+		8A7B017E24E9905A0043906D /* TypeBird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeBird.swift; sourceTree = "<group>"; };
+		8A7B018024E993120043906D /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		8A3DCC7A24E6DEEA005D0CC2 /* DecoyBirds */ = {
 			isa = PBXGroup;
 			children = (
+				8A7B017D24E990290043906D /* Model */,
 				8A3DCC9724E8359F005D0CC2 /* View */,
 				8A3DCC9624E8357E005D0CC2 /* Controllers */,
 				8A3DCC9A24E8360C005D0CC2 /* Cell */,
@@ -106,6 +111,15 @@
 				8A3DCC9824E835DC005D0CC2 /* TypeBirdsTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		8A7B017D24E990290043906D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A7B017E24E9905A0043906D /* TypeBird.swift */,
+				8A7B018024E993120043906D /* Bird.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,9 +195,11 @@
 			files = (
 				8A3DCC7C24E6DEEA005D0CC2 /* AppDelegate.swift in Sources */,
 				8A3DCC9024E6E01D005D0CC2 /* DecoyCell.swift in Sources */,
+				8A7B017F24E9905A0043906D /* TypeBird.swift in Sources */,
 				8A3DCC9224E833A1005D0CC2 /* TypeBirdsTableViewController.swift in Sources */,
 				8A3DCC9424E8347E005D0CC2 /* BirdsSongTableViewController.swift in Sources */,
 				8A3DCC9924E835DC005D0CC2 /* TypeBirdsTableViewCell.swift in Sources */,
+				8A7B018124E993120043906D /* Bird.swift in Sources */,
 				8A3DCC8E24E6DF77005D0CC2 /* DecoyCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

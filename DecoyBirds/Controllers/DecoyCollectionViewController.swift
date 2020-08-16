@@ -11,7 +11,7 @@ import UIKit
 class DecoyCollectionViewController: UICollectionViewController {
     let numPerInRow: CGFloat = 2
     let insetSection: UIEdgeInsets = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
-    let imagesBirds = ["Бекас", "Вальдшнеп", "Воробей", "Ворона", "Вяхирь", "Глухарь", "Грач", "Гусь", "Куропатка"]
+    let imagesBirds = ["Бекас", "Вальдшнеп", "Воробей", "Ворона", "Вяхирь", "Глухарь", "Грач", "Гуменной гусь", "Гусь", "Куропатка"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +46,7 @@ class DecoyCollectionViewController: UICollectionViewController {
         
         let imageName = imagesBirds[indexPath.item]
         let image = UIImage(named: imageName)
-        cell.imageBird.layer.cornerRadius = cell.imageBird.frame.width / 2
+        cell.imageBird.layer.cornerRadius = cell.imageBird.frame.height / 4
         cell.imageBird.clipsToBounds = true
         cell.imageBird.image = image
         cell.nameBird.text = imageName

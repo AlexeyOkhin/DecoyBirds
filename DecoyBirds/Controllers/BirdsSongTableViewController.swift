@@ -16,12 +16,5 @@ class BirdsSongTableViewController: UITableViewController {
        
     }
     
-    // MARK: - UnwindSegue
     
-    @IBAction func unwindSegue (segue: UIStoryboardSegue) {
-        
-    }
-
-   
-
 }
