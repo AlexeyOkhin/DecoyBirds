@@ -10,7 +10,7 @@ import Foundation
 
 struct TypeBird {
     let name: String
-    let birds = [Bird]()
+    var birds = [Bird]()
   
 }
 

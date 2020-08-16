@@ -13,5 +13,10 @@ class DecoyCell: UICollectionViewCell {
     @IBOutlet weak var imageBird: UIImageView!
     @IBOutlet weak var nameBird: UILabel!
     
+    func set(object: TypeBird){
+        self.imageBird.image = UIImage(named: object.name)
+        self.nameBird.text = object.name
+    }
+    
     
 }

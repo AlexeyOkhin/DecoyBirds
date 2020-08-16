@@ -9,12 +9,29 @@
 import UIKit
 
 class DecoyCollectionViewController: UICollectionViewController {
+    
     let numPerInRow: CGFloat = 2
     let insetSection: UIEdgeInsets = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
-    let imagesBirds = ["Бекас", "Вальдшнеп", "Воробей", "Ворона", "Вяхирь", "Глухарь", "Грач", "Гуменной гусь", "Гусь", "Куропатка"]
+    /*//let typeBirds = ["Бекас", "Вальдшнеп", "Воробей", "Ворона", "Вяхирь", "Глухарь", "Грач", "Гуменной гусь", "Гусь", "Куропатка"]
+    //let birds = [Bird(name: String, pictureName: String, songName: String, isFavorite: true)]
+    let snipe = TypeBird(name: "Бекас", birds: [Bird(name: "Бекас-1", pictureName: "Бекас-1", songName: "Бекас-1", isFavorite: false)])
+    let woodcock = TypeBird(name: "Вальдшнеп", birds: [Bird(name: "Вальдшнеп", pictureName: "Вальдшнеп", songName: "Вальдшнеп", isFavorite: false)])
+    let sparrow = TypeBird(name: "Воробей", birds: [Bird(name: "Воробей", pictureName: "Воробей", songName: "Воробей", isFavorite: false)])
+    let crow = TypeBird(name: "Ворона", birds: [Bird(name: "Ворона", pictureName: "Ворона", songName: "Ворона", isFavorite: false)])
+    let vyakhir = TypeBird(name: "Вяхирь", birds: [Bird(name: "Вяхирь-01", pictureName: "Вяхирь-01", songName: "Вяхирь-01", isFavorite: false), Bird(name: "Вяхирь-02", pictureName: "Вяхирь-02", songName: "Вяхирь-02", isFavorite: false)])
+    let capercaillie = TypeBird(name: "Глухарь", birds: [Bird(name: "Глухарь-01", pictureName: "Глухарь-01", songName: "Глухарь-01", isFavorite: false), Bird(name: "Глухарь-02", pictureName: "Глухарь-02", songName: "Глухарь-02", isFavorite: false), Bird(name: "Глухарь-03", pictureName: "Глухарь-03", songName: "Глухарь-03", isFavorite: false), Bird(name: "Глухарь ток", pictureName: "Глухарь ток", songName: "Глухарь ток", isFavorite: false)])
+    let rook = TypeBird(name: "Грач", birds: [Bird(name: "Грач-01", pictureName: "Грач-01", songName: "Грач-01", isFavorite: false)])
+    let geese = TypeBird(name: "Гуси", birds: [Bird(name: "Казарка", pictureName: "Казарка", songName: "Казарка", isFavorite: false), Bird(name: "Казарка-01", pictureName: "Казарка-01", songName: "Казарка-01", isFavorite: false), Bird(name: "Гуменной гусь", pictureName: "Гуменной гусь", songName: "Гуменной гусь", isFavorite: false), Bird(name: "Гуменной гусь-01", pictureName: "Гуменной гусь-01", songName: "Гуменной гусь-01", isFavorite: false), Bird(name: "Гуменной гусь-02", pictureName: "Гуменной гусь-02", songName: "Гуменной гусь-02", isFavorite: false), Bird(name: "Гусь серый-01", pictureName: "Гусь серый-01", songName: "Гусь серый-01", isFavorite: false), Bird(name: "Гусь серый-02", pictureName: "Гусь серый-02", songName: "Гусь серый-02", isFavorite: false),Bird(name: "Гусь серый-03", pictureName: "Гусь серый-03", songName: "Гусь серый-03", isFavorite: false), Bird(name: "Гусь белолобый-01", pictureName: "Гусь белолобый-01", songName: "Гусь белолобый-01", isFavorite: false), Bird(name: "Гусь белолобый-02", pictureName: "Гусь белолобый-02", songName: "Гусь белолобый-02", isFavorite: false),Bird(name: "Гусь белолобый-03", pictureName: "Гусь белолобый-03", songName: "Гусь белолобый-03", isFavorite: false)])
+    let partridge = TypeBird(name: "Куропатка", birds: [Bird(name: "Куропатка белая", pictureName: "Куропатка белая", songName: "Куропатка белая", isFavorite: false), Bird(name: "Куропатка серая", pictureName: "Куропатка серая", songName: "Куропатка серая", isFavorite: false)]) */
+    
+    let typeBirds = [TypeBird(name: "Бекас", birds: [Bird(name: "Бекас-1", pictureName: "Бекас-1", songName: "Бекас-1", isFavorite: false)]), TypeBird(name: "Вальдшнеп", birds: [Bird(name: "Вальдшнеп", pictureName: "Вальдшнеп", songName: "Вальдшнеп", isFavorite: false)]), TypeBird(name: "Воробей", birds: [Bird(name: "Воробей", pictureName: "Воробей", songName: "Воробей", isFavorite: false)]), TypeBird(name: "Ворона", birds: [Bird(name: "Ворона", pictureName: "Ворона", songName: "Ворона", isFavorite: false)]), TypeBird(name: "Вяхирь", birds: [Bird(name: "Вяхирь-01", pictureName: "Вяхирь-01", songName: "Вяхирь-01", isFavorite: false), Bird(name: "Вяхирь-02", pictureName: "Вяхирь-02", songName: "Вяхирь-02", isFavorite: false)]), TypeBird(name: "Глухарь", birds: [Bird(name: "Глухарь-01", pictureName: "Глухарь-01", songName: "Глухарь-01", isFavorite: false), Bird(name: "Глухарь-02", pictureName: "Глухарь-02", songName: "Глухарь-02", isFavorite: false), Bird(name: "Глухарь-03", pictureName: "Глухарь-03", songName: "Глухарь-03", isFavorite: false), Bird(name: "Глухарь ток", pictureName: "Глухарь ток", songName: "Глухарь ток", isFavorite: false)]), TypeBird(name: "Грач", birds: [Bird(name: "Грач-01", pictureName: "Грач-01", songName: "Грач-01", isFavorite: false)]), TypeBird(name: "Гусь", birds: [Bird(name: "Казарка", pictureName: "Казарка", songName: "Казарка", isFavorite: false), Bird(name: "Казарка-01", pictureName: "Казарка-01", songName: "Казарка-01", isFavorite: false), Bird(name: "Гуменной гусь", pictureName: "Гуменной гусь", songName: "Гуменной гусь", isFavorite: false), Bird(name: "Гуменной гусь-01", pictureName: "Гуменной гусь-01", songName: "Гуменной гусь-01", isFavorite: false), Bird(name: "Гуменной гусь-02", pictureName: "Гуменной гусь-02", songName: "Гуменной гусь-02", isFavorite: false), Bird(name: "Гусь серый-01", pictureName: "Гусь серый-01", songName: "Гусь серый-01", isFavorite: false), Bird(name: "Гусь серый-02", pictureName: "Гусь серый-02", songName: "Гусь серый-02", isFavorite: false),Bird(name: "Гусь серый-03", pictureName: "Гусь серый-03", songName: "Гусь серый-03", isFavorite: false), Bird(name: "Гусь белолобый-01", pictureName: "Гусь белолобый-01", songName: "Гусь белолобый-01", isFavorite: false), Bird(name: "Гусь белолобый-02", pictureName: "Гусь белолобый-02", songName: "Гусь белолобый-02", isFavorite: false),Bird(name: "Гусь белолобый-03", pictureName: "Гусь белолобый-03", songName: "Гусь белолобый-03", isFavorite: false)]), TypeBird(name: "Куропатка", birds: [Bird(name: "Куропатка белая", pictureName: "Куропатка белая", songName: "Куропатка белая", isFavorite: false), Bird(name: "Куропатка серая", pictureName: "Куропатка серая", songName: "Куропатка серая", isFavorite: false)])]
+    
+     
+    
+    
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad() 
         
         
     }
@@ -22,6 +39,20 @@ class DecoyCollectionViewController: UICollectionViewController {
     // MARK: - UnwindSegue
     
     @IBAction func unwindSegue (segue: UIStoryboardSegue) {
+        
+    }
+    
+    // MARK: - PrepareForSegue
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        guard segue.identifier == "isTypeBirdSegue" else { return }
+        if let indexPath = collectionView.indexPathsForSelectedItems?.first {
+            let birds = typeBirds[indexPath.item].birds
+            let navigationVC = segue.destination as! UINavigationController
+            let birdsVC = navigationVC.topViewController as! TypeBirdsTableViewController
+            birdsVC.birds = birds
+        }
         
     }
     
@@ -36,7 +67,7 @@ class DecoyCollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return imagesBirds.count
+        return typeBirds.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -44,16 +75,14 @@ class DecoyCollectionViewController: UICollectionViewController {
         
         //cell.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         
-        let imageName = imagesBirds[indexPath.item]
-        let image = UIImage(named: imageName)
+        let typeBird = typeBirds[indexPath.item]
         cell.imageBird.layer.cornerRadius = cell.imageBird.frame.height / 4
         cell.imageBird.clipsToBounds = true
-        cell.imageBird.image = image
-        cell.nameBird.text = imageName
-        
+        cell.set(object: typeBird)
+  
         return cell
     }
-  
+    
 }
 
 extension DecoyCollectionViewController: UICollectionViewDelegateFlowLayout {
