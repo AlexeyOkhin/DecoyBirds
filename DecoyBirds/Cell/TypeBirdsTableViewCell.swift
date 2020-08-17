@@ -14,4 +14,9 @@ class TypeBirdsTableViewCell: UITableViewCell {
     @IBOutlet weak var nameBirdSong: UILabel!
     @IBOutlet weak var infoBird: UILabel!
     
+    func set(object: Bird){
+        self.imageBird.image = UIImage(named: object.pictureName)
+        self.nameBirdSong.text = object.name
+    }
+    
 }

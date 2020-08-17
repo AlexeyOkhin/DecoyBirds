@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "speaker.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Бекас.jpg",
       "scale" : "2x"
     },
     {

@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "star-3.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Бекас.jpg",
       "scale" : "2x"
     },
     {
