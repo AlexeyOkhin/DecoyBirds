@@ -18,6 +18,22 @@ class TypeBirdsTableViewController: UITableViewController {
     
         
     }
+    // MARK: - PrepareForSegue
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        guard segue.identifier == "isSongBirdSegue" else { return }
+        if let indexPath = tableView.indexPathForSelectedRow {
+            let bird = birds[indexPath.row]
+            let navigationVC = segue.destination as! UINavigationController
+            let birdSongVC = navigationVC.topViewController as! BirdsSongTableViewController
+            birdSongVC.title = bird.name
+            birdSongVC.songBird = bird
+        
+        }
+        
+        
+    }
     
     // MARK: - UnwindSegue
     

@@ -16,6 +16,7 @@
 		8A3DCC9224E833A1005D0CC2 /* TypeBirdsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DCC9124E833A1005D0CC2 /* TypeBirdsTableViewController.swift */; };
 		8A3DCC9424E8347E005D0CC2 /* BirdsSongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DCC9324E8347E005D0CC2 /* BirdsSongTableViewController.swift */; };
 		8A3DCC9924E835DC005D0CC2 /* TypeBirdsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DCC9824E835DC005D0CC2 /* TypeBirdsTableViewCell.swift */; };
+		8A5C75D124EAAF1600BA187F /* crow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A5C75D024EAAF1600BA187F /* crow.mp3 */; };
 		8A7B017F24E9905A0043906D /* TypeBird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7B017E24E9905A0043906D /* TypeBird.swift */; };
 		8A7B018124E993120043906D /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7B018024E993120043906D /* Bird.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		8A3DCC9124E833A1005D0CC2 /* TypeBirdsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeBirdsTableViewController.swift; sourceTree = "<group>"; };
 		8A3DCC9324E8347E005D0CC2 /* BirdsSongTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdsSongTableViewController.swift; sourceTree = "<group>"; };
 		8A3DCC9824E835DC005D0CC2 /* TypeBirdsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeBirdsTableViewCell.swift; sourceTree = "<group>"; };
+		8A5C75D024EAAF1600BA187F /* crow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crow.mp3; sourceTree = "<group>"; };
 		8A7B017E24E9905A0043906D /* TypeBird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeBird.swift; sourceTree = "<group>"; };
 		8A7B018024E993120043906D /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +68,7 @@
 		8A3DCC7A24E6DEEA005D0CC2 /* DecoyBirds */ = {
 			isa = PBXGroup;
 			children = (
+				8A5C75CF24EAAEEF00BA187F /* Sounds */,
 				8A7B017D24E990290043906D /* Model */,
 				8A3DCC9724E8359F005D0CC2 /* View */,
 				8A3DCC9624E8357E005D0CC2 /* Controllers */,
@@ -113,6 +116,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		8A5C75CF24EAAEEF00BA187F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				8A5C75D024EAAF1600BA187F /* crow.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		8A7B017D24E990290043906D /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +165,11 @@
 				TargetAttributes = {
 					8A3DCC7724E6DEEA005D0CC2 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -181,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A3DCC8624E6DEEB005D0CC2 /* LaunchScreen.storyboard in Resources */,
+				8A5C75D124EAAF1600BA187F /* crow.mp3 in Resources */,
 				8A3DCC8324E6DEEB005D0CC2 /* Assets.xcassets in Resources */,
 				8A3DCC8124E6DEEA005D0CC2 /* Main.storyboard in Resources */,
 			);
