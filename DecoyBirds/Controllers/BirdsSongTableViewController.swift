@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import MediaPlayer
 
 class BirdsSongTableViewController: UITableViewController {
     var audioPlayer = AVAudioPlayer()
@@ -15,11 +16,16 @@ class BirdsSongTableViewController: UITableViewController {
 
     @IBOutlet weak var imageBird: UIImageView!
     @IBOutlet weak var favoriteButton: UIButton!
-    @IBOutlet weak var volumeSlider: UISlider!
+    @IBOutlet weak var volumeView: UIView!
     
-    
+      
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        volumeView.backgroundColor = .clear
+        let volumeViewSet = MPVolumeView(frame: volumeView.bounds)
+        volumeView.addSubview(volumeViewSet)
+        
         imageBird.image = UIImage(named: songBird.pictureName)
         let songName = songBird.songName
         
@@ -63,9 +69,20 @@ class BirdsSongTableViewController: UITableViewController {
         
     }
     
-    @IBAction func volumeAction(_ sender: UISlider) {
-        //volumeSlider.value
-    }
+   
     
     
 }
+
+/*extension MPVolumeView {
+    static func setVolume(_ volume: Float) {
+        let volumeView = MPVolumeView()
+        let slider = volumeView.subviews.first(where: { $0 is UISlider }) as? UISlider
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.01) {
+            slider?.value = volume
+        }
+    }
+}*/
+
+
