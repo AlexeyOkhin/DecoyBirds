@@ -14,7 +14,6 @@
 		8A3DCC8E24E6DF77005D0CC2 /* DecoyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DCC8D24E6DF77005D0CC2 /* DecoyCollectionViewController.swift */; };
 		8A3DCC9024E6E01D005D0CC2 /* DecoyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DCC8F24E6E01D005D0CC2 /* DecoyCell.swift */; };
 		8A3DCC9224E833A1005D0CC2 /* TypeBirdsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DCC9124E833A1005D0CC2 /* TypeBirdsTableViewController.swift */; };
-		8A3DCC9424E8347E005D0CC2 /* BirdsSongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DCC9324E8347E005D0CC2 /* BirdsSongTableViewController.swift */; };
 		8A3DCC9924E835DC005D0CC2 /* TypeBirdsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DCC9824E835DC005D0CC2 /* TypeBirdsTableViewCell.swift */; };
 		8A5C75D124EAAF1600BA187F /* crow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A5C75D024EAAF1600BA187F /* crow.mp3 */; };
 		8A7B017F24E9905A0043906D /* TypeBird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7B017E24E9905A0043906D /* TypeBird.swift */; };
@@ -31,7 +30,6 @@
 		8A3DCC8D24E6DF77005D0CC2 /* DecoyCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoyCollectionViewController.swift; sourceTree = "<group>"; };
 		8A3DCC8F24E6E01D005D0CC2 /* DecoyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoyCell.swift; sourceTree = "<group>"; };
 		8A3DCC9124E833A1005D0CC2 /* TypeBirdsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeBirdsTableViewController.swift; sourceTree = "<group>"; };
-		8A3DCC9324E8347E005D0CC2 /* BirdsSongTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdsSongTableViewController.swift; sourceTree = "<group>"; };
 		8A3DCC9824E835DC005D0CC2 /* TypeBirdsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeBirdsTableViewCell.swift; sourceTree = "<group>"; };
 		8A5C75D024EAAF1600BA187F /* crow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crow.mp3; sourceTree = "<group>"; };
 		8A7B017E24E9905A0043906D /* TypeBird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeBird.swift; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 		8A3DCC9624E8357E005D0CC2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8A3DCC9324E8347E005D0CC2 /* BirdsSongTableViewController.swift */,
 				8A3DCC9124E833A1005D0CC2 /* TypeBirdsTableViewController.swift */,
 				8A3DCC8D24E6DF77005D0CC2 /* DecoyCollectionViewController.swift */,
 			);
@@ -214,7 +211,6 @@
 				8A3DCC9024E6E01D005D0CC2 /* DecoyCell.swift in Sources */,
 				8A7B017F24E9905A0043906D /* TypeBird.swift in Sources */,
 				8A3DCC9224E833A1005D0CC2 /* TypeBirdsTableViewController.swift in Sources */,
-				8A3DCC9424E8347E005D0CC2 /* BirdsSongTableViewController.swift in Sources */,
 				8A3DCC9924E835DC005D0CC2 /* TypeBirdsTableViewCell.swift in Sources */,
 				8A7B018124E993120043906D /* Bird.swift in Sources */,
 				8A3DCC8E24E6DF77005D0CC2 /* DecoyCollectionViewController.swift in Sources */,

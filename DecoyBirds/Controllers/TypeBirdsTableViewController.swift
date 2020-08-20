@@ -7,39 +7,27 @@
 //
 
 import UIKit
+import AVFoundation
 
 class TypeBirdsTableViewController: UITableViewController {
     
     var birds = [Bird]()
-    //let titelNavigation = ""
+    var audioPlayer = AVAudioPlayer()
+    
+    @IBOutlet weak var nameSongLabel: UILabel!
+    @IBOutlet weak var footerView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        
-    }
-    // MARK: - PrepareForSegue
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        super.prepare(for: segue, sender: sender)
-        guard segue.identifier == "isSongBirdSegue" else { return }
-        if let indexPath = tableView.indexPathForSelectedRow {
-            let bird = birds[indexPath.row]
-            let navigationVC = segue.destination as! UINavigationController
-            let birdSongVC = navigationVC.topViewController as! BirdsSongTableViewController
-            birdSongVC.title = bird.name
-            birdSongVC.songBird = bird
-        
-        }
         
         
     }
     
     // MARK: - UnwindSegue
     
-    @IBAction func unwindSegue (segue: UIStoryboardSegue) {
-        
-    }
+    //@IBAction func unwindSegue (segue: UIStoryboardSegue) {
+    
+    //}
     
     // MARK: - Table view data source
     
@@ -68,6 +56,41 @@ class TypeBirdsTableViewController: UITableViewController {
     {
         return 100 //or whatever you need
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // test code for background
+        
+        let songName = birds[indexPath.row].songName
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: .defaultToSpeaker)
+            print("AVAudioSession Category Playback OK")
+            do {
+                try AVAudioSession.sharedInstance().setActive(true)
+                print("AVAudioSession is Active")
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+        
+        /////////////////// end test code
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: songName, ofType: "mp3")!))
+        } catch  {
+            print ("Error")
+        }
+        nameSongLabel.text = birds[indexPath.row].name
+        tableView.tableFooterView = footerView
+        tableView.sectionFooterHeight = 100
+        audioPlayer.prepareToPlay()
+        audioPlayer.numberOfLoops = 1
+        audioPlayer.play()
+    }
+    
+    
     
     
 }
