@@ -49,11 +49,11 @@ class DecoyCollectionViewController: UICollectionViewController {
         guard segue.identifier == "isTypeBirdSegue" else { return }
         if let indexPath = collectionView.indexPathsForSelectedItems?.first {
             let birds = typeBirds[indexPath.item].birds
-            let navigationVC = segue.destination as! UINavigationController
-            let birdsVC = navigationVC.topViewController as! TypeBirdsTableViewController
+            //let navigationVC = segue.destination as! UINavigationController
+            let birdsVC = segue.destination as! TypeBirdsTableViewController
             
             birdsVC.title = typeBirds[indexPath.item].name
-            navigationVC.navigationBar.prefersLargeTitles = true
+            //navigationVC.navigationBar.prefersLargeTitles = true
             
             birdsVC.birds = birds
             
