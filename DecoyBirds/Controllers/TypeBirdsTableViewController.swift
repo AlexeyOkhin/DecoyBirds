@@ -14,21 +14,14 @@ class TypeBirdsTableViewController: UITableViewController {
     var birds = [Bird]()
     var audioPlayer = AVAudioPlayer()
     
-    @IBOutlet weak var nameSongLabel: UILabel!
-    @IBOutlet weak var footerView: UIView!
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
     }
-    
-    // MARK: - UnwindSegue
-    
-    //@IBAction func unwindSegue (segue: UIStoryboardSegue) {
-    
-    //}
-    
+
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -82,15 +75,22 @@ class TypeBirdsTableViewController: UITableViewController {
         } catch  {
             print ("Error")
         }
-        nameSongLabel.text = birds[indexPath.row].name
-        tableView.tableFooterView = footerView
-        tableView.sectionFooterHeight = 100
+        let footerView = UIView()
+        footerView.frame = CGRect(x: 0, y: tableView.frame.height - 200, width: tableView.bounds.width, height: 70)
+        footerView.backgroundColor = #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)
+        footerView.alpha = 0
+        self.view.addSubview(footerView)
+        UIView.animate(withDuration: 0.5, delay: 0, options: .transitionCrossDissolve, animations: {
+                //footerView.frame = CGRect(x: 0, y: tableView.frame.height - 300, width: tableView.bounds.width, height: 70)
+           footerView.alpha = 1
+        }, completion: nil)
+        
+        
+        
         audioPlayer.prepareToPlay()
-        audioPlayer.numberOfLoops = 1
+        //audioPlayer.numberOfLoops = 1
         audioPlayer.play()
+        
     }
-    
-    
-    
-    
+  
 }
