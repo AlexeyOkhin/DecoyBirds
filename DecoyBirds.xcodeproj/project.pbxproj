@@ -9,31 +9,29 @@
 /* Begin PBXBuildFile section */
 		8A3DCC7C24E6DEEA005D0CC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DCC7B24E6DEEA005D0CC2 /* AppDelegate.swift */; };
 		8A3DCC8124E6DEEA005D0CC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A3DCC7F24E6DEEA005D0CC2 /* Main.storyboard */; };
-		8A3DCC8324E6DEEB005D0CC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A3DCC8224E6DEEB005D0CC2 /* Assets.xcassets */; };
 		8A3DCC8624E6DEEB005D0CC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A3DCC8424E6DEEB005D0CC2 /* LaunchScreen.storyboard */; };
 		8A3DCC8E24E6DF77005D0CC2 /* DecoyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DCC8D24E6DF77005D0CC2 /* DecoyCollectionViewController.swift */; };
 		8A3DCC9024E6E01D005D0CC2 /* DecoyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DCC8F24E6E01D005D0CC2 /* DecoyCell.swift */; };
-		8A3DCC9224E833A1005D0CC2 /* TypeBirdsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DCC9124E833A1005D0CC2 /* TypeBirdsTableViewController.swift */; };
 		8A3DCC9924E835DC005D0CC2 /* TypeBirdsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DCC9824E835DC005D0CC2 /* TypeBirdsTableViewCell.swift */; };
 		8A5C75D124EAAF1600BA187F /* crow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A5C75D024EAAF1600BA187F /* crow.mp3 */; };
 		8A7B017F24E9905A0043906D /* TypeBird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7B017E24E9905A0043906D /* TypeBird.swift */; };
 		8A7B018124E993120043906D /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7B018024E993120043906D /* Bird.swift */; };
+		8AD12B7E24F6BFDD00EDEF6C /* TypeBirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD12B7D24F6BFDD00EDEF6C /* TypeBirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8A3DCC7824E6DEEA005D0CC2 /* DecoyBirds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DecoyBirds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A3DCC7B24E6DEEA005D0CC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A3DCC8024E6DEEA005D0CC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8A3DCC8224E6DEEB005D0CC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A3DCC8524E6DEEB005D0CC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A3DCC8724E6DEEB005D0CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A3DCC8D24E6DF77005D0CC2 /* DecoyCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoyCollectionViewController.swift; sourceTree = "<group>"; };
 		8A3DCC8F24E6E01D005D0CC2 /* DecoyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoyCell.swift; sourceTree = "<group>"; };
-		8A3DCC9124E833A1005D0CC2 /* TypeBirdsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeBirdsTableViewController.swift; sourceTree = "<group>"; };
 		8A3DCC9824E835DC005D0CC2 /* TypeBirdsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeBirdsTableViewCell.swift; sourceTree = "<group>"; };
 		8A5C75D024EAAF1600BA187F /* crow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crow.mp3; sourceTree = "<group>"; };
 		8A7B017E24E9905A0043906D /* TypeBird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeBird.swift; sourceTree = "<group>"; };
 		8A7B018024E993120043906D /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
+		8AD12B7D24F6BFDD00EDEF6C /* TypeBirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeBirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +69,6 @@
 				8A3DCC9724E8359F005D0CC2 /* View */,
 				8A3DCC9624E8357E005D0CC2 /* Controllers */,
 				8A3DCC9A24E8360C005D0CC2 /* Cell */,
-				8A3DCC8224E6DEEB005D0CC2 /* Assets.xcassets */,
 				8A3DCC9524E8356A005D0CC2 /* Other file */,
 				8A3DCC8724E6DEEB005D0CC2 /* Info.plist */,
 			);
@@ -90,7 +87,7 @@
 		8A3DCC9624E8357E005D0CC2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8A3DCC9124E833A1005D0CC2 /* TypeBirdsTableViewController.swift */,
+				8AD12B7D24F6BFDD00EDEF6C /* TypeBirdViewController.swift */,
 				8A3DCC8D24E6DF77005D0CC2 /* DecoyCollectionViewController.swift */,
 			);
 			path = Controllers;
@@ -195,7 +192,6 @@
 			files = (
 				8A3DCC8624E6DEEB005D0CC2 /* LaunchScreen.storyboard in Resources */,
 				8A5C75D124EAAF1600BA187F /* crow.mp3 in Resources */,
-				8A3DCC8324E6DEEB005D0CC2 /* Assets.xcassets in Resources */,
 				8A3DCC8124E6DEEA005D0CC2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,9 +204,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A3DCC7C24E6DEEA005D0CC2 /* AppDelegate.swift in Sources */,
+				8AD12B7E24F6BFDD00EDEF6C /* TypeBirdViewController.swift in Sources */,
 				8A3DCC9024E6E01D005D0CC2 /* DecoyCell.swift in Sources */,
 				8A7B017F24E9905A0043906D /* TypeBird.swift in Sources */,
-				8A3DCC9224E833A1005D0CC2 /* TypeBirdsTableViewController.swift in Sources */,
 				8A3DCC9924E835DC005D0CC2 /* TypeBirdsTableViewCell.swift in Sources */,
 				8A7B018124E993120043906D /* Bird.swift in Sources */,
 				8A3DCC8E24E6DF77005D0CC2 /* DecoyCollectionViewController.swift in Sources */,

@@ -35,7 +35,7 @@ class DecoyCollectionViewController: UICollectionViewController {
         if let indexPath = collectionView.indexPathsForSelectedItems?.first {
             let birds = typeBirds[indexPath.item].birds
             //let navigationVC = segue.destination as! UINavigationController
-            let birdsVC = segue.destination as! TypeBirdsTableViewController
+            let birdsVC = segue.destination as! TypeBirdViewController
             
             birdsVC.title = typeBirds[indexPath.item].name
             //navigationVC.navigationBar.prefersLargeTitles = true

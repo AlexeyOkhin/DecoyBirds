@@ -13,6 +13,7 @@ class TypeBirdsTableViewCell: UITableViewCell {
     @IBOutlet weak var imageBird: UIImageView!
     @IBOutlet weak var nameBirdSong: UILabel!
     @IBOutlet weak var infoBird: UILabel!
+    @IBOutlet weak var favoritButton: UIButton!
     
     func set(object: Bird){
         self.imageBird.image = UIImage(named: object.pictureName)

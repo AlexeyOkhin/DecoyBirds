@@ -1,40 +1,42 @@
 //
-//  TypeBirdsTableViewController.swift
+//  TypeBirdViewController.swift
 //  DecoyBirds
 //
-//  Created by Alexey on 15.08.2020.
+//  Created by Alexey on 26.08.2020.
 //  Copyright © 2020 Alexey Okhin. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-class TypeBirdsTableViewController: UITableViewController {
+class TypeBirdViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var birds = [Bird]()
     var audioPlayer = AVAudioPlayer()
-    
-   
+
+    @IBOutlet weak var miniPlayerView: UIView!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        miniPlayerView.isHidden = true
+       
     }
-
+    
     // MARK: - Table view data source
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
+     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return birds.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "typeBirdsCell", for: indexPath) as! TypeBirdsTableViewCell
         
         let bird = birds[indexPath.row]
@@ -45,12 +47,12 @@ class TypeBirdsTableViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
         return 100 //or whatever you need
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // test code for background
         
         let songName = birds[indexPath.row].songName
@@ -81,8 +83,8 @@ class TypeBirdsTableViewController: UITableViewController {
         footerView.alpha = 0
         self.view.addSubview(footerView)
         UIView.animate(withDuration: 0.5, delay: 0, options: .transitionCrossDissolve, animations: {
-                //footerView.frame = CGRect(x: 0, y: tableView.frame.height - 300, width: tableView.bounds.width, height: 70)
-           footerView.alpha = 1
+            //footerView.frame = CGRect(x: 0, y: tableView.frame.height - 300, width: tableView.bounds.width, height: 70)
+            footerView.alpha = 1
         }, completion: nil)
         
         
@@ -92,5 +94,7 @@ class TypeBirdsTableViewController: UITableViewController {
         audioPlayer.play()
         
     }
-  
+    
+
+    
 }
